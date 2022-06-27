@@ -30,6 +30,13 @@ var app = new Vue(
                     done: true
                 }
             ]
+        },
+        methods: {
+            // Funzione che, utilizzando la tecnica dello splice, 
+            // rimuove dall'array l'elemento selezionato con la X.
+            removeTask(index) {
+                this.todos.splice(index, 1);
+            }
         }
         
     }
