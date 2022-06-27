@@ -13,7 +13,7 @@
 
     <div id="root">
         <div class="inputs">
-            <input type="text" placeholder="Nuova Task">
+            <input v-model="newTaskText" type="text" placeholder="Nuova Task">
             <button @click="addTask()">Add task</button>
         </div>
 
