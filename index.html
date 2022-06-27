@@ -9,6 +9,24 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div id="root">
+        <div class="inputs">
+            <input type="text" placeholder="Nuovo todo">
+            <button>Add task</button>
+        </div>
+
+        <div class="todos-container">
+            <ul class="todos-list">
+                <!-- Template base todo -->
+                <li v-for="singleTodo, index in todos" class="todo" :class=" { 'line-through': singleTodo.done === true}">
+                    {{ singleTodo.text }}
+                </li>
+            </ul>
+
+        </div>
+        
+    </div>
     
     <script src="js/script.js"></script>
 </body>
