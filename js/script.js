@@ -16,6 +16,7 @@ var app = new Vue(
     {
         el: '#root',
         data: {
+            newTaskText: '',
             todos: [
                 {
                     text: 'Fare i compiti',
@@ -36,7 +37,10 @@ var app = new Vue(
             // rimuove dall'array l'elemento selezionato con la X.
             removeTask(index) {
                 this.todos.splice(index, 1);
-            }
+            },
+            addTask() {
+                
+            }    
         }
         
     }
